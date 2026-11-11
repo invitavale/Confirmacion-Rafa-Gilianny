@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rafa & Gilianny · Nuestra Boda</title>
+<meta name="description" content="Confirma tu asistencia a la boda de Rafa & Gilianny · Lunes 21 de diciembre de 2026, 6:00 PM">
+<meta name="theme-color" content="#5f7d6e">
+<!-- Vista previa al compartir el link (cambia el nombre del repo si usas otro y sube portada.jpg) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rafa & Gilianny · Nuestra Boda">
+<meta property="og:description" content="21 de diciembre · 6:00 PM · ¡Confirma tu asistencia!">
+<meta property="og:image" content="https://invitavale.com/Boda-Rafa-Gilianny/portada.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#8ba696; --sage-d:#5f7d6e; --sage-l:#c9d7cd; --forest:#2f4a3e;
+  --gold:#c49a42; --gold-l:#e6cd86; --gold-d:#9a7429;
+  --cream:#f6efe0; --paper:#fbf7ee; --ink:#3b3326; --muted:#7a6f5c;
+  --foil:linear-gradient(100deg,#e3c574 0%,#f7e6ad 25%,#d4ad55 50%,#f5e1a2 75%,#e0c06c 100%);
+  --shadow:0 18px 40px -18px rgba(47,74,62,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Cormorant Garamond',Georgia,serif;color:var(--ink);font-size:18px;line-height:1.5;
+  background:var(--cream);
+  background-image:
+    radial-gradient(circle at 15% 10%,rgba(255,255,255,.7),transparent 40%),
+    radial-gradient(circle at 85% 80%,rgba(201,215,205,.35),transparent 45%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .25 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  overflow-x:hidden;
+}
+.foil{padding:0 .12em .08em;background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wrap{max-width:540px;margin:0 auto;padding:0 18px}
+section{padding:72px 0;position:relative}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Decoración ---------- */
+.branch{position:absolute;width:min(170px,40vw);height:auto;pointer-events:none}
+.b-tl{top:-10px;left:-34px;transform:scaleY(-1) rotate(8deg)}
+.b-tr{top:-10px;right:-34px;transform:scaleY(-1) rotate(-8deg)}
+.b-bl{bottom:-6px;left:-30px}
+.b-br{bottom:-6px;right:-30px}
+.divider{display:flex;align-items:center;gap:10px;justify-content:center;margin:14px auto 0;color:var(--gold)}
+.divider:before,.divider:after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold))}
+.divider:after{transform:scaleX(-1)}
+.divider img{width:28px;height:auto;transform:rotate(45deg)}
+
+/* ---------- Hero / Pasaporte ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 18px 40px;position:relative;overflow:hidden}
+.hero-kicker{font-family:'Cinzel',serif;letter-spacing:.32em;font-size:12px;color:var(--sage-d);margin-bottom:18px;text-align:center}
+.passport{
+  position:relative;width:min(320px,82vw);aspect-ratio:3/4.2;border-radius:10px 16px 16px 10px;
+  background:
+    radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.18),transparent 55%),
+    linear-gradient(160deg,#94ae9f 0%,#7f9b8b 55%,#6f8b7c 100%);
+  box-shadow:var(--shadow),inset 6px 0 0 rgba(0,0,0,.08),inset 0 0 0 1px rgba(255,255,255,.08);
+  display:flex;flex-direction:column;align-items:center;padding:30px 20px 24px;text-align:center;
+}
+.passport:before{content:"";position:absolute;inset:10px;border:1px solid rgba(233,209,139,.5);border-radius:6px 10px 10px 6px;pointer-events:none}
+.passport:after{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;border-radius:10px 0 0 10px;background:linear-gradient(90deg,rgba(0,0,0,.18),transparent)}
+.pp-title{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(28px,9vw,38px);letter-spacing:.06em;line-height:1}
+.pp-sub{font-family:'Cinzel',serif;font-weight:600;font-size:12px;letter-spacing:.34em;margin-top:8px;text-shadow:none}
+.pp-globe{width:58%;margin:16px 0 6px;position:relative;display:flex;justify-content:center}
+.pp-globe-img{width:72%;height:auto;display:block}
+.pp-trail{position:absolute;inset:-4% -22% 0 0;width:122%;height:auto;overflow:visible;pointer-events:none}
+.pp-names{font-family:'Great Vibes',cursive;font-size:clamp(32px,10vw,44px);line-height:1.25;margin-top:auto;white-space:nowrap;max-width:100%}
+.pp-motto{font-family:'Cinzel',serif;font-weight:600;font-size:11px;letter-spacing:.32em;margin-top:6px}
+.charm{position:absolute;width:76px;right:-14px;top:52%;filter:drop-shadow(0 6px 6px rgba(0,0,0,.25));animation:sway 4s ease-in-out infinite;transform-origin:50% 0}
+.string{position:absolute;inset:0;pointer-events:none}
+@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+
+.pp{position:relative;width:min(300px,76vw);filter:drop-shadow(0 18px 22px rgba(47,74,62,.35))}
+.pp-img{width:100%;height:auto;display:block;transform:rotate(-2deg)}
+.pp-ondas{position:absolute;left:-10%;width:120%;top:55%;transform:rotate(-5deg);pointer-events:none}
+.pp-charm{position:absolute;width:36%;right:-13%;top:44%;transform-origin:20% 10%;animation:sway 4s ease-in-out infinite;filter:drop-shadow(0 6px 6px rgba(0,0,0,.25))}
+.hero-motto{font-family:'Cinzel',serif;letter-spacing:.36em;font-size:12px;color:var(--gold-d);margin-top:18px;text-align:center}
+.boarding{
+  margin-top:26px;width:min(360px,92vw);display:flex;background:var(--paper);border-radius:12px;box-shadow:var(--shadow);
+  position:relative;overflow:hidden;border:1px solid rgba(196,154,66,.35)
+}
+.boarding .main{flex:1;padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+.boarding .stub{width:74px;background:var(--sage-d);color:var(--cream);display:flex;align-items:center;justify-content:center;position:relative}
+.boarding .stub span{writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Cinzel',serif;letter-spacing:.3em;font-size:12px}
+.boarding .stub:before{content:"";position:absolute;left:-1px;top:6px;bottom:6px;border-left:2px dashed var(--paper)}
+.bp-label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+.bp-val{font-size:17px;font-weight:600;color:var(--forest);line-height:1.15}
+.bp-val.script{font-family:'Great Vibes',cursive;font-weight:400;font-size:24px;color:var(--ink)}
+.bp-full{grid-column:1/-1}
+.barcode{height:26px;margin-top:4px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 5px,transparent 5px 8px,var(--ink) 8px 11px,transparent 11px 12px);opacity:.75;border-radius:2px}
+
+.count{display:flex;gap:10px;margin-top:26px;justify-content:center}
+.count div{background:rgba(251,247,238,.85);border:1px solid rgba(196,154,66,.4);border-radius:10px;min-width:64px;padding:8px 6px;text-align:center}
+.count b{display:block;font-family:'Cinzel',serif;font-size:24px;color:var(--forest);line-height:1.1}
+.count small{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.18em;color:var(--muted)}
+
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px}
+.btn-ticket{
+  --c:var(--paper);display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border:none;cursor:pointer;
+  font-family:'Cinzel',serif;font-weight:600;font-size:13px;letter-spacing:.14em;color:var(--forest);text-decoration:none;
+  background:var(--c);border:1.5px solid var(--gold);border-radius:6px;position:relative;box-shadow:0 8px 18px -10px rgba(47,74,62,.5);
+  -webkit-mask:radial-gradient(circle 7px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 7px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 7px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 7px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;
+  transition:transform .2s;
+}
+.btn-ticket:active{transform:scale(.97)}
+.btn-pill{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:999px;cursor:pointer;text-decoration:none;
+  font-family:'Cinzel',serif;font-weight:600;font-size:13px;letter-spacing:.14em;color:#f3e3b0;
+  background:linear-gradient(180deg,#3a5a4b,#2a4337);border:1.5px solid var(--gold);box-shadow:0 0 0 3px rgba(196,154,66,.18),0 10px 22px -12px rgba(47,74,62,.8);
+  transition:transform .2s,filter .2s;
+}
+.btn-pill:hover{filter:brightness(1.08)}
+.btn-pill:active{transform:scale(.97)}
+.btn-pill[disabled]{opacity:.6;pointer-events:none}
+.ico{width:20px;height:20px;flex:none}
+.scroll-hint{margin-top:26px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.3em;color:var(--sage-d);animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+
+/* ---------- Encabezados de sección ---------- */
+.sec-head{text-align:center;margin-bottom:28px}
+.sec-head .stamp{width:84px;height:84px;margin:0 auto 10px;display:block}
+.globe-art{position:relative;width:120px;height:120px;margin:0 auto 14px}
+.globe-art .g{width:100%;height:100%}
+.globe-art .orbit{position:absolute;inset:-18px;animation:orbit 9s linear infinite}
+.globe-art .orbit img{position:absolute;top:0;left:50%;width:34px;transform:translateX(-50%) rotate(55deg)}
+@keyframes orbit{to{transform:rotate(360deg)}}
+.route{display:block;width:100%;max-width:420px;margin:0 auto 6px;height:auto}
+.sec-kicker{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.34em;color:var(--sage-d)}
+.sec-title{font-family:'Great Vibes',cursive;font-size:clamp(40px,12vw,54px);color:var(--forest);line-height:1.05;margin-top:4px}
+.sec-text{font-size:19px;color:var(--muted);max-width:420px;margin:10px auto 0;font-style:italic}
+
+/* ---------- RSVP ---------- */
+.card{
+  background:var(--paper);border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(196,154,66,.45);position:relative;
+}
+.card:before{content:"";position:absolute;inset:7px;border:1px solid rgba(196,154,66,.35);border-radius:11px;pointer-events:none}
+.rsvp-card{padding:30px 24px 28px;overflow:hidden}
+.rsvp-card .perfo{position:absolute;left:0;right:0;top:64px;border-top:2px dashed rgba(196,154,66,.45)}
+.rsvp-card .perfo:before,.rsvp-card .perfo:after{content:"";position:absolute;top:-12px;width:22px;height:22px;border-radius:50%;background:var(--cream)}
+.rsvp-card .perfo:before{left:-11px}.rsvp-card .perfo:after{right:-11px}
+.ticket-top{display:flex;justify-content:space-between;align-items:center;height:30px;margin-bottom:28px}
+.ticket-top span{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.26em;color:var(--sage-d)}
+.ticket-top svg{width:26px;height:26px}
+.field{margin-bottom:18px}
+.field label{display:block;font-family:'Cinzel',serif;font-size:11px;letter-spacing:.2em;color:var(--sage-d);margin-bottom:6px}
+.field input,.field textarea{
+  width:100%;font:inherit;font-size:19px;color:var(--ink);background:transparent;border:none;border-bottom:1.5px solid rgba(95,125,110,.4);
+  padding:6px 2px;outline:none;transition:border-color .2s;border-radius:0
+}
+.field textarea{resize:vertical;min-height:70px;border:1.5px solid rgba(95,125,110,.3);border-radius:10px;padding:10px 12px;font-size:18px}
+.field input:focus,.field textarea:focus{border-color:var(--gold)}
+.field input::placeholder,.field textarea::placeholder{color:#b3a891;font-style:italic}
+.choice{display:grid;gap:10px}
+.choice label{
+  display:flex;align-items:center;gap:12px;padding:12px 14px;border:1.5px solid rgba(196,154,66,.45);border-radius:10px;cursor:pointer;
+  font-size:20px;letter-spacing:0;font-family:'Cormorant Garamond',serif;color:var(--ink);transition:background .2s,border-color .2s;margin:0
+}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.choice .box{width:24px;height:24px;border:2px solid var(--gold-d);border-radius:5px;display:grid;place-items:center;flex:none;background:#fff}
+.choice .box svg{width:18px;height:18px;opacity:0;transform:scale(.4);transition:.2s}
+.choice input:checked+label{background:rgba(201,215,205,.45);border-color:var(--sage-d)}
+.choice input:checked+label .box svg{opacity:1;transform:none}
+.choice input:focus-visible+label{outline:2px solid var(--gold);outline-offset:2px}
+.stepper{display:flex;align-items:center;gap:14px}
+.stepper button{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--gold);background:#fff;color:var(--forest);font-size:24px;cursor:pointer;line-height:1}
+.stepper output{font-family:'Cinzel',serif;font-size:28px;color:var(--forest);min-width:34px;text-align:center}
+.stepper small{color:var(--muted);font-style:italic}
+.collapse{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.collapse.open{grid-template-rows:1fr}
+.collapse>div{overflow:hidden}
+.err{color:#a0452f;font-size:16px;min-height:22px;text-align:center;margin:-4px 0 10px}
+.submit-row{text-align:center;margin-top:6px}
+
+.done{display:none;text-align:center;padding:10px 0 4px}
+.done.show{display:block;animation:pop .6s ease}
+@keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+.phone{
+  width:200px;margin:0 auto 18px;border-radius:28px;padding:10px;background:linear-gradient(160deg,#2f4a3e,#1f3329);box-shadow:var(--shadow);
+}
+.phone .scr{background:var(--paper);border-radius:20px;padding:26px 14px 22px;border:1px solid var(--gold-l)}
+.phone .check{width:62px;height:62px;margin:0 auto 10px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center}
+.phone .check svg{width:34px;height:34px}
+.phone h3{font-family:'Great Vibes',cursive;font-weight:400;font-size:30px;color:var(--forest);line-height:1.1}
+.phone p{font-size:16px;color:var(--muted);margin-top:6px}
+.done .who{font-size:19px}
+.linkish{background:none;border:none;color:var(--sage-d);font:inherit;font-style:italic;text-decoration:underline;cursor:pointer;margin-top:10px}
+
+/* ---------- Regalos ---------- */
+.gift-sec{background:linear-gradient(180deg,transparent,rgba(201,215,205,.35) 25%,rgba(201,215,205,.35) 75%,transparent)}
+.gift-banner{
+  display:flex;align-items:center;justify-content:center;gap:12px;margin:0 auto 22px;width:max-content;max-width:100%;padding:10px 26px;
+  background:var(--paper);border:1.5px solid var(--gold);border-radius:6px;
+  -webkit-mask:radial-gradient(circle 8px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 8px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 8px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 8px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;
+}
+.gift-banner svg{width:32px;height:32px}
+.gift-banner span{font-family:'Great Vibes',cursive;font-size:28px;color:var(--forest);white-space:nowrap}
+.bank{padding:22px 22px 20px;margin-bottom:18px;display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
+.bank .bico{width:52px;height:52px;border-radius:12px;background:rgba(201,215,205,.55);display:grid;place-items:center}
+.bank .bico svg{width:32px;height:32px}
+.bank h4{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.2em;color:var(--sage-d);font-weight:600;margin-bottom:8px}
+.row{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed rgba(196,154,66,.45);font-size:17px}
+.row:last-of-type{border-bottom:none}
+.row>span{white-space:nowrap}
+.row b{font-weight:600;color:var(--forest);text-align:right}
+.row .num{font-family:'Cinzel',serif;letter-spacing:.08em;font-size:17px}
+.copy{
+  margin-top:12px;display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:1.5px solid var(--gold);
+  background:#fff;color:var(--forest);font-family:'Cinzel',serif;font-size:11px;letter-spacing:.16em;cursor:pointer;transition:.2s
+}
+.copy svg{width:16px;height:16px}
+.copy.ok{background:var(--sage-d);color:#fff;border-color:var(--sage-d)}
+.cash{padding:24px 22px;text-align:center}
+.cash .env{width:120px;margin:0 auto 6px;display:block}
+.cash h4{font-family:'Great Vibes',cursive;font-weight:400;font-size:34px;color:var(--forest);line-height:1.1}
+.cash p{color:var(--muted);font-size:18px;font-style:italic;margin-top:4px}
+
+/* ---------- Footer ---------- */
+footer{text-align:center;padding:40px 18px 50px;position:relative}
+.seal{width:96px;height:96px;margin:0 auto;display:block;cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;transition:transform .15s}
+.seal:active{transform:scale(.95)}
+.f-leaf{position:absolute;top:10px;width:min(150px,36vw);pointer-events:none}
+.f-l{left:-24px}.f-r{right:-24px}
+footer{overflow:hidden}
+.f-names{font-family:'Great Vibes',cursive;font-size:38px;color:var(--forest);margin-top:8px}
+.f-date{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.32em;color:var(--sage-d)}
+.f-brand{margin-top:26px;font-size:13px;color:#a69a82;letter-spacing:.08em}
+.f-brand a{color:inherit}
+
+/* ---------- Toast ---------- */
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,30px);opacity:0;background:var(--forest);color:#f3e3b0;padding:10px 20px;border-radius:999px;font-size:16px;transition:.3s;z-index:90;border:1px solid var(--gold);pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- Panel de los novios ---------- */
+.panel{position:fixed;inset:0;z-index:80;background:var(--cream);overflow:auto;display:none;-webkit-overflow-scrolling:touch}
+.panel.show{display:block}
+.pin-box{max-width:360px;margin:12vh auto 0;padding:34px 26px;text-align:center}
+.pin-box h3{font-family:'Great Vibes',cursive;font-weight:400;font-size:40px;color:var(--forest)}
+.pin-box p{color:var(--muted);font-style:italic;margin-bottom:18px}
+.pin-box input{width:100%;text-align:center;font-family:'Cinzel',serif;font-size:22px;letter-spacing:.3em;padding:12px;border:1.5px solid var(--gold);border-radius:10px;background:#fff;outline:none;margin-bottom:14px;text-transform:uppercase}
+.p-wrap{max-width:1040px;margin:0 auto;padding:22px 16px 60px}
+.p-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.p-head h2{font-family:'Great Vibes',cursive;font-weight:400;font-size:40px;color:var(--forest);line-height:1}
+.p-head small{display:block;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.26em;color:var(--sage-d);margin-top:4px}
+.p-actions{display:flex;flex-wrap:wrap;gap:8px}
+.p-btn{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:999px;border:1.5px solid var(--gold);background:#fff;color:var(--forest);font-family:'Cinzel',serif;font-size:11px;letter-spacing:.12em;cursor:pointer}
+.p-btn svg{width:15px;height:15px}
+.p-btn.dark{background:var(--forest);color:#f3e3b0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.kpi{background:var(--paper);border:1px solid rgba(196,154,66,.45);border-radius:14px;padding:14px 16px}
+.kpi span{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;color:var(--muted)}
+.kpi b{display:block;font-family:'Cinzel',serif;font-size:32px;color:var(--forest);line-height:1.2}
+.kpi i{font-size:14px;color:var(--muted)}
+.charts{display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:12px;margin-bottom:16px}
+.chart-card{background:var(--paper);border:1px solid rgba(196,154,66,.45);border-radius:14px;padding:14px}
+.chart-card h5{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.16em;color:var(--sage-d);font-weight:600;margin-bottom:8px}
+.chart-box{position:relative;height:210px}
+.tbl-card{background:var(--paper);border:1px solid rgba(196,154,66,.45);border-radius:14px;padding:14px}
+.tbl-tools{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px;align-items:center}
+.tbl-tools input{flex:1;min-width:170px;font:inherit;font-size:17px;padding:8px 12px;border-radius:999px;border:1.5px solid rgba(95,125,110,.35);background:#fff;outline:none}
+.seg{display:inline-flex;border:1.5px solid var(--gold);border-radius:999px;overflow:hidden}
+.seg button{border:none;background:#fff;padding:8px 12px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;color:var(--forest);cursor:pointer}
+.seg button.on{background:var(--sage-d);color:#fff}
+.tbl-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:16px;min-width:620px}
+th{text-align:left;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.14em;color:var(--muted);font-weight:600;padding:8px;border-bottom:1.5px solid rgba(196,154,66,.5)}
+td{padding:9px 8px;border-bottom:1px dashed rgba(196,154,66,.35);vertical-align:top}
+td.msg{max-width:260px;font-style:italic;color:var(--muted)}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:13px;font-family:'Cinzel',serif;letter-spacing:.06em}
+.tag.si{background:rgba(95,125,110,.18);color:var(--forest)}
+.tag.no{background:rgba(160,69,47,.12);color:#8a3b28}
+.wa{color:var(--sage-d)}
+.del{border:none;background:none;color:#b07a6a;cursor:pointer;font-size:18px;padding:2px 6px}
+.empty{text-align:center;padding:28px;color:var(--muted);font-style:italic}
+@media (max-width:820px){.kpis{grid-template-columns:repeat(2,1fr)}.charts{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ Recursos SVG ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a97d2c"/><stop offset=".35" stop-color="#ecd48f"/>
+      <stop offset=".6" stop-color="#b98d36"/><stop offset="1" stop-color="#e9cf86"/>
+    </linearGradient>
+    <radialGradient id="seal" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#f0d998"/><stop offset=".55" stop-color="#c49a42"/><stop offset="1" stop-color="#8d6823"/>
+    </radialGradient>
+    <symbol id="plane" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="var(--forest)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="bankico" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 4l9 5.5"/><path d="M4 10h16M5 10v8M9 10v8M15 10v8M19 10v8M3.5 20.5h17"/></symbol>
+    <symbol id="giftico" viewBox="0 0 24 24" fill="none" stroke="var(--gold-d)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="9" width="17" height="11.5" rx="1"/><path d="M2.5 9h19M12 9v11.5M12 9c-1-3.5-5-4.5-5-2s3 2 5 2zm0 0c1-3.5 5-4.5 5-2s-3 2-5 2z"/></symbol>
+    <symbol id="copyico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+    <symbol id="calico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M8.5 15l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="dlico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="refico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ PORTADA ============ -->
+<header class="hero" id="inicio">
+  <img class="branch b-tl" src="img/ramita-izq.webp" alt="">
+  <img class="branch b-tr" src="img/ramita-der.webp" alt="">
+  <img class="branch b-bl" src="img/ramita-izq.webp" alt="">
+  <img class="branch b-br" src="img/ramita-der.webp" alt="">
+
+  <p class="hero-kicker reveal">TE INVITAMOS A VIAJAR CON NOSOTROS</p>
+
+  <div class="passport reveal" aria-label="Pasaporte de nuestra boda">
+    <p class="pp-title foil">PASAPORTE</p>
+    <p class="pp-sub foil">NUESTRA BODA</p>
+    <div class="pp-globe">
+      <img class="pp-globe-img" src="img/globo.webp" alt="">
+      <svg class="pp-trail" viewBox="0 0 140 110">
+        <path id="trail" d="M72 70 C88 64 96 52 100 46 C104 38 98 32 94 36 C90 40 96 46 104 42 C114 36 122 26 132 14" fill="none" stroke="url(#gold)" stroke-width="1.3" stroke-dasharray="2.5 3"/>
+        <g>
+          <use href="#plane" x="-8" y="-8" width="16" height="16" fill="url(#gold)" transform="rotate(90)"/>
+          <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" calcMode="linear"><mpath href="#trail"/></animateMotion>
+        </g>
+      </svg>
+    </div>
+    <p class="pp-names foil">Rafa &amp; Gilianny</p>
+    <p class="pp-motto foil">JUNTOS PARA SIEMPRE</p>
+    <img class="pp-ondas" src="img/ondas.webp" alt="">
+    <img class="pp-charm" src="img/avion.webp" alt="">
+  </div>
+
+  <div class="boarding reveal" aria-label="Pase de abordar">
+    <div class="main">
+      <div class="bp-full"><p class="bp-label">Pasajeros</p><p class="bp-val script">Rafa &amp; Gilianny</p></div>
+      <div><p class="bp-label">Salida</p><p class="bp-val">21 DIC 2026</p></div>
+      <div><p class="bp-label">Abordaje</p><p class="bp-val">6:00 PM</p></div>
+      <div><p class="bp-label">Vuelo</p><p class="bp-val">RG · 2112</p></div>
+      <div><p class="bp-label">Destino</p><p class="bp-val">Para siempre</p></div>
+      <div class="bp-full barcode"></div>
+    </div>
+    <div class="stub"><span>PASE DE ABORDAR</span></div>
+  </div>
+
+  <div class="count reveal" id="count" aria-live="polite">
+    <div><b id="cd-d">--</b><small>DÍAS</small></div>
+    <div><b id="cd-h">--</b><small>HORAS</small></div>
+    <div><b id="cd-m">--</b><small>MIN</small></div>
+    <div><b id="cd-s">--</b><small>SEG</small></div>
+  </div>
+
+  <div class="cta reveal">
+    <a class="btn-ticket" href="#confirmar"><img class="ico" src="img/avion-2.webp" alt="" style="transform:rotate(45deg)">CONFIRMAR ASISTENCIA</a>
+    <a class="btn-pill" href="#regalos"><svg class="ico"><use href="#giftico" style="stroke:#f3e3b0"/></svg>DAR UN REGALO</a>
+  </div>
+  <p class="scroll-hint">▾</p>
+</header>
+
+<!-- ============ CONFIRMACIÓN ============ -->
+<section id="confirmar">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="globe-art"><img class="g" src="img/globo.webp" alt=""><div class="orbit"><img src="img/avion-2.webp" alt=""></div></div>
+      <p class="sec-kicker">CONFIRMACIÓN DE ASISTENCIA</p>
+      <h2 class="sec-title">¿Nos acompañas?</h2>
+      <p class="sec-text">Será un honor tenerte a bordo en este viaje. Por favor confirma tu asistencia.</p>
+      <div class="divider"><img src="img/avion-2.webp" alt=""></div>
+    </div>
+
+    <div class="card rsvp-card reveal">
+      <div class="perfo"></div>
+      <div class="ticket-top">
+        <span>PASE · RSVP</span>
+        <img src="img/avion-2.webp" alt="" style="width:30px;transform:rotate(45deg)">
+        <span>21 · 12 · 2026</span>
+      </div>
+
+      <form id="rsvpForm" novalidate>
+        <div class="field">
+          <label for="nombre">NOMBRE Y APELLIDO</label>
+          <input id="nombre" name="nombre" autocomplete="name" maxlength="80" placeholder="Escribe tu nombre" required>
+        </div>
+        <div class="field">
+          <label>¿ASISTIRÁS?</label>
+          <div class="choice">
+            <input type="radio" name="asiste" id="si" value="si">
+            <label for="si"><span class="box"><svg><use href="#check"/></svg></span>Sí, asistiré</label>
+            <input type="radio" name="asiste" id="no" value="no">
+            <label for="no"><span class="box"><svg><use href="#check"/></svg></span>No podré asistir</label>
+          </div>
+        </div>
+        <div class="collapse" id="extra"><div>
+          <div class="field">
+            <label>¿CUÁNTAS PERSONAS (INCLUYÉNDOTE)?</label>
+            <div class="stepper">
+              <button type="button" id="menos" aria-label="Menos">−</button>
+              <output id="personas">1</output>
+              <button type="button" id="mas" aria-label="Más">+</button>
+              <small id="persTxt">persona</small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="telefono">TELÉFONO / WHATSAPP <span style="text-transform:none;letter-spacing:0;font-family:'Cormorant Garamond';font-style:italic">(opcional)</span></label>
+            <input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="809-000-0000">
+          </div>
+        </div></div>
+        <div class="field">
+          <label for="mensaje">MENSAJE PARA LOS NOVIOS <span style="text-transform:none;letter-spacing:0;font-family:'Cormorant Garamond';font-style:italic">(opcional)</span></label>
+          <textarea id="mensaje" name="mensaje" maxlength="400" placeholder="Unas palabras de cariño…"></textarea>
+        </div>
+        <p class="err" id="err" role="alert"></p>
+        <div class="submit-row">
+          <button class="btn-pill" type="submit" id="enviar"><svg class="ico"><use href="#calico"/></svg>CONFIRMAR</button>
+        </div>
+      </form>
+
+      <div class="done" id="done">
+        <div class="phone"><div class="scr">
+          <div class="check"><svg><use href="#check"/></svg></div>
+          <h3 id="doneTitle">¡Asistencia confirmada!</h3>
+          <p id="doneText">Gracias por acompañarnos ♡</p>
+        </div></div>
+        <p class="who" id="doneWho"></p>
+        <button class="linkish" type="button" id="cambiar">Modificar mi respuesta</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGALOS ============ -->
+<section id="regalos" class="gift-sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <img class="route" src="img/ruta.webp" alt="">
+      <p class="sec-kicker">MESA DE REGALOS</p>
+      <h2 class="sec-title">Un detalle con amor</h2>
+      <p class="sec-text">Tu presencia es nuestro mejor regalo. Si deseas bendecirnos con un detalle para este nuevo destino, puedes hacerlo de estas formas.</p>
+      <div class="divider"><img src="img/avion-2.webp" alt=""></div>
+    </div>
+
+    <div class="gift-banner reveal"><svg><use href="#bankico"/></svg><span>Datos para transferencia</span></div>
+
+    <div class="card bank reveal">
+      <div class="bico"><svg><use href="#bankico"/></svg></div>
+      <div>
+        <h4>BANRESERVAS</h4>
+        <div class="row"><span>Tipo de cuenta</span><b>Ahorros</b></div>
+        <div class="row"><span>No. de cuenta</span><b class="num">9604132730</b></div>
+        <div class="row"><span>A nombre de</span><b>Gilianny Serrata Almanzar</b></div>
+        <button class="copy" type="button" data-copy="9604132730"><svg><use href="#copyico"/></svg><span>COPIAR CUENTA</span></button>
+      </div>
+    </div>
+
+    <div class="card bank reveal">
+      <div class="bico"><svg><use href="#bankico"/></svg></div>
+      <div>
+        <h4>COOPSANO</h4>
+        <div class="row"><span>Tipo de cuenta</span><b>Ahorros</b></div>
+        <div class="row"><span>No. de cuenta</span><b class="num">0010993685</b></div>
+        <div class="row"><span>A nombre de</span><b>Gilianny Serrata Almanzar</b></div>
+        <button class="copy" type="button" data-copy="0010993685"><svg><use href="#copyico"/></svg><span>COPIAR CUENTA</span></button>
+      </div>
+    </div>
+
+    <div class="card cash reveal">
+      <svg class="env" viewBox="0 0 120 84" aria-hidden="true">
+        <rect x="4" y="8" width="112" height="72" rx="6" fill="#7f9b8b" stroke="url(#gold)" stroke-width="1.5"/>
+        <path d="M4 14 L60 52 L116 14" fill="#8ba696" stroke="url(#gold)" stroke-width="1.5"/>
+        <circle cx="60" cy="50" r="15" fill="url(#seal)"/>
+        <circle cx="60" cy="50" r="11" fill="none" stroke="#8d6823" stroke-width=".8" opacity=".6"/>
+        <use href="#plane" x="51" y="41" width="18" height="18" fill="#7a5a1d" transform="rotate(45 60 50)"/>
+      </svg>
+      <h4>Regalo en efectivo</h4>
+      <p>También puedes traerlo en un sobre el día del evento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIE ============ -->
+<footer>
+  <img class="f-leaf f-l" src="img/ramita-izq.webp" alt="">
+  <img class="f-leaf f-r" src="img/ramita-der.webp" alt="">
+  <svg class="seal" id="seal" viewBox="0 0 100 100" role="img" aria-label="Rafa y Gilianny">
+    <path d="M50 4 C58 4 60 10 67 11 C74 12 79 8 85 13 C90 18 86 25 89 31 C92 37 98 41 96 49 C95 57 89 59 88 66 C87 73 91 79 86 85 C81 90 74 86 68 89 C62 92 58 98 50 96 C42 95 40 89 33 88 C26 87 21 91 15 86 C10 81 14 74 11 68 C8 62 2 58 4 50 C5 42 11 40 12 33 C13 26 9 21 14 15 C19 10 26 14 32 11 C38 8 42 4 50 4Z" fill="url(#seal)"/>
+    <circle cx="50" cy="50" r="32" fill="none" stroke="#8d6823" stroke-width="1.2" opacity=".55"/>
+    <text x="50" y="60" text-anchor="middle" font-family="Great Vibes, cursive" font-size="30" fill="#6e4f17">R&amp;G</text>
+  </svg>
+  <p class="f-names">Rafa &amp; Gilianny</p>
+  <p class="f-date">21 · DICIEMBRE · 2026 · 6:00 PM</p>
+  <p class="f-brand">Invitación digital por <a href="https://invitavale.com" target="_blank" rel="noopener">Invitavale</a></p>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<!-- ============ PANEL DE LOS NOVIOS (oculto) ============ -->
+<div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Panel de los novios">
+  <div class="card pin-box" id="pinBox">
+    <img src="img/globo.webp" alt="" style="width:70px;margin:0 auto 6px;display:block">
+    <h3>Panel de los novios</h3>
+    <p>Ingresa su código privado</p>
+    <form id="pinForm">
+      <input id="pin" autocomplete="off" maxlength="12" placeholder="••••••" aria-label="Código">
+      <p class="err" id="pinErr"></p>
+      <button class="btn-pill" type="submit" id="pinBtn" style="width:100%">ENTRAR</button>
+    </form>
+    <button class="linkish" type="button" data-close>Volver a la invitación</button>
+  </div>
+
+  <div class="p-wrap" id="dash" hidden>
+    <div class="p-head">
+      <div><h2>Rafa &amp; Gilianny</h2><small>LISTA DE INVITADOS CONFIRMADOS</small></div>
+      <div class="p-actions">
+        <button class="p-btn dark" id="dlXlsx"><svg><use href="#dlico"/></svg>EXCEL</button>
+        <button class="p-btn" id="dlCsv"><svg><use href="#dlico"/></svg>CSV</button>
+        <button class="p-btn" id="reload"><svg><use href="#refico"/></svg>ACTUALIZAR</button>
+        <button class="p-btn" id="logout">SALIR</button>
+      </div>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><span>ASISTIRÁN</span><b id="kPers">0</b><i>personas</i></div>
+      <div class="kpi"><span>CONFIRMARON SÍ</span><b id="kSi">0</b><i>respuestas</i></div>
+      <div class="kpi"><span>NO ASISTIRÁN</span><b id="kNo">0</b><i>respuestas</i></div>
+      <div class="kpi"><span>TOTAL RESPUESTAS</span><b id="kTot">0</b><i id="kLast">—</i></div>
+    </div>
+    <div class="charts">
+      <div class="chart-card"><h5>RESPUESTAS</h5><div class="chart-box"><canvas id="cPie"></canvas></div></div>
+      <div class="chart-card"><h5>CONFIRMACIONES POR DÍA</h5><div class="chart-box"><canvas id="cDays"></canvas></div></div>
+      <div class="chart-card"><h5>TAMAÑO DE LOS GRUPOS</h5><div class="chart-box"><canvas id="cSize"></canvas></div></div>
+    </div>
+    <div class="tbl-card">
+      <div class="tbl-tools">
+        <input id="q" type="search" placeholder="Buscar por nombre o teléfono…">
+        <div class="seg" id="seg">
+          <button class="on" data-f="all">TODOS</button><button data-f="si">SÍ</button><button data-f="no">NO</button>
+        </div>
+      </div>
+      <div class="tbl-scroll">
+        <table>
+          <thead><tr><th>#</th><th>Nombre</th><th>Asistirá</th><th>Personas</th><th>Teléfono</th><th>Mensaje</th><th>Fecha</th><th></th></tr></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ================= CONFIGURACIÓN ================= */
+const CFG = {
+  event: 'boda-rafa-gilianny',
+  supabaseUrl: 'https://nsujtmfmyoeibbvwkzez.supabase.co',
+  supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5zdWp0bWZteW9laWJidndremV6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4MTU1NTIsImV4cCI6MjEwNzM5MTU1Mn0.iTfBeS7wPTr-mR0cgTVbvDjZZGJOXtVA52vcEkgvE7s',
+  maxPersonas: 6,
+  fecha: '2026-12-21T18:00:00-04:00',
+  archivo: 'Invitados-Rafa-y-Gilianny'
+};
+
+const $ = s => document.querySelector(s);
+const store = {
+  get(k){ try{ return JSON.parse(localStorage.getItem(k)) }catch(e){ return null } },
+  set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} },
+  ses(k,v){ try{ if(v===undefined) return sessionStorage.getItem(k); if(v===null) sessionStorage.removeItem(k); else sessionStorage.setItem(k,v) }catch(e){ return null } }
+};
+async function rpc(fn, body){
+  const r = await fetch(`${CFG.supabaseUrl}/rest/v1/rpc/${fn}`, {
+    method:'POST',
+    headers:{ 'Content-Type':'application/json', apikey:CFG.supabaseKey, Authorization:'Bearer '+CFG.supabaseKey },
+    body: JSON.stringify(body)
+  });
+  const txt = await r.text(); let data; try{ data = JSON.parse(txt) }catch(e){ data = txt }
+  if(!r.ok) throw new Error((data && data.message) || 'Error de conexión');
+  return data;
+}
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('show'),2400); }
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* ================= Animaciones al hacer scroll ================= */
+const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target) } }), {threshold:.15});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* ================= Cuenta regresiva ================= */
+(function(){
+  const target = new Date(CFG.fecha).getTime();
+  const pad = n => String(n).padStart(2,'0');
+  function tick(){
+    let d = Math.max(0, target - Date.now());
+    $('#cd-d').textContent = Math.floor(d/864e5);
+    $('#cd-h').textContent = pad(Math.floor(d/36e5)%24);
+    $('#cd-m').textContent = pad(Math.floor(d/6e4)%60);
+    $('#cd-s').textContent = pad(Math.floor(d/1e3)%60);
+  }
+  tick(); setInterval(tick, 1000);
+})();
+
+/* ================= Confirmación ================= */
+const form = $('#rsvpForm'), extra = $('#extra'), err = $('#err');
+let personas = 1;
+function setPersonas(n){
+  personas = Math.min(CFG.maxPersonas, Math.max(1, n));
+  $('#personas').textContent = personas;
+  $('#persTxt').textContent = personas === 1 ? 'persona' : 'personas';
+}
+$('#menos').onclick = () => setPersonas(personas-1);
+$('#mas').onclick = () => setPersonas(personas+1);
+form.asiste.forEach(r => r.addEventListener('change', () => extra.classList.toggle('open', form.asiste.value === 'si')));
+
+function showDone(d){
+  form.style.display = 'none';
+  $('#done').classList.add('show');
+  if(d.asiste){
+    $('#doneTitle').textContent = '¡Asistencia confirmada!';
+    $('#doneText').textContent = 'Gracias por acompañarnos ♡';
+    $('#doneWho').innerHTML = `<b>${esc(d.nombre)}</b> · ${d.personas} ${d.personas===1?'persona':'personas'}<br>Nos vemos el 21 de diciembre a las 6:00 PM ✈`;
+  } else {
+    $('#doneTitle').textContent = '¡Gracias por avisarnos!';
+    $('#doneText').textContent = 'Te llevaremos en el corazón ♡';
+    $('#doneWho').innerHTML = `<b>${esc(d.nombre)}</b> · No podrá asistir`;
+  }
+}
+$('#cambiar').onclick = () => {
+  const d = store.get('rg_rsvp') || {};
+  $('#done').classList.remove('show'); form.style.display = '';
+  $('#nombre').value = d.nombre || '';
+  if(d.asiste !== undefined){ (d.asiste ? $('#si') : $('#no')).checked = true; extra.classList.toggle('open', !!d.asiste); }
+  if(d.personas) setPersonas(d.personas);
+  if(d.telefono) $('#telefono').value = d.telefono;
+  $('#nombre').focus();
+};
+const prev = store.get('rg_rsvp'); if(prev && prev.nombre) showDone(prev);
+
+form.addEventListener('submit', async e => {
+  e.preventDefault(); err.textContent = '';
+  const nombre = $('#nombre').value.trim().replace(/\s+/g,' ');
+  const val = form.asiste.value;
+  if(nombre.length < 2){ err.textContent = 'Por favor escribe tu nombre.'; $('#nombre').focus(); return; }
+  if(!val){ err.textContent = 'Indícanos si podrás asistir.'; return; }
+  const asiste = val === 'si';
+  const data = { nombre, asiste, personas: asiste ? personas : 0, telefono: asiste ? $('#telefono').value.trim() : '', mensaje: $('#mensaje').value.trim() };
+  const btn = $('#enviar'); btn.disabled = true; btn.lastChild.textContent = 'ENVIANDO…';
+  try{
+    await rpc('rsvp_abierto_confirmar', { p_event:CFG.event, p_nombre:data.nombre, p_telefono:data.telefono, p_asiste:data.asiste, p_personas:data.personas, p_mensaje:data.mensaje });
+    store.set('rg_rsvp', data);
+    showDone(data);
+    $('#confirmar').scrollIntoView({behavior:'smooth'});
+  }catch(ex){
+    err.textContent = 'No pudimos enviar tu respuesta. Revisa tu conexión e inténtalo de nuevo.';
+  }finally{ btn.disabled = false; btn.lastChild.textContent = 'CONFIRMAR'; }
+});
+
+/* ================= Copiar cuentas ================= */
+document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', async () => {
+  const v = b.dataset.copy;
+  try{ await navigator.clipboard.writeText(v) }
+  catch(e){ const t=document.createElement('textarea'); t.value=v; document.body.appendChild(t); t.select(); try{document.execCommand('copy')}catch(_){} t.remove(); }
+  b.classList.add('ok'); b.querySelector('span').textContent = '¡COPIADO!'; toast('Número de cuenta copiado');
+  setTimeout(()=>{ b.classList.remove('ok'); b.querySelector('span').textContent='COPIAR CUENTA'; }, 1800);
+}));
+
+/* ================= Panel discreto de los novios =================
+   Se abre tocando 5 veces el sello dorado del final,
+   manteniéndolo presionado 2 segundos, o con #novios al final del link. */
+const panel = $('#panel');
+let taps = 0, tapT, pressT;
+const seal = $('#seal');
+seal.addEventListener('click', () => { taps++; clearTimeout(tapT); tapT = setTimeout(()=>taps=0, 1600); if(taps>=5){ taps=0; openPanel(); } });
+seal.addEventListener('pointerdown', () => { pressT = setTimeout(openPanel, 2000) });
+['pointerup','pointerleave','pointercancel'].forEach(ev => seal.addEventListener(ev, () => clearTimeout(pressT)));
+if(location.hash === '#novios') openPanel();
+window.addEventListener('hashchange', () => { if(location.hash === '#novios') openPanel() });
+
+function openPanel(){
+  panel.classList.add('show'); document.body.style.overflow='hidden';
+  const saved = store.ses('rg_pin');
+  if(saved){ login(saved) } else { setTimeout(()=>$('#pin').focus(), 50) }
+}
+function closePanel(){
+  panel.classList.remove('show'); document.body.style.overflow='';
+  if(location.hash === '#novios') history.replaceState(null,'',location.pathname+location.search);
+}
+document.querySelectorAll('[data-close]').forEach(b => b.onclick = closePanel);
+$('#logout').onclick = () => { store.ses('rg_pin', null); $('#dash').hidden = true; $('#pinBox').hidden = false; $('#pin').value=''; closePanel(); };
+
+let ROWS = [], PIN = '', filtro = 'all', charts = {};
+$('#pinForm').addEventListener('submit', e => { e.preventDefault(); login($('#pin').value.trim()); });
+
+async function login(pin){
+  $('#pinErr').textContent = ''; $('#pinBtn').disabled = true;
+  try{
+    ROWS = await rpc('rsvp_abierto_panel', { p_event:CFG.event, p_pin:pin });
+    PIN = pin; store.ses('rg_pin', pin);
+    $('#pinBox').hidden = true; $('#dash').hidden = false;
+    await loadScript('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js');
+    render();
+  }catch(ex){
+    store.ses('rg_pin', null);
+    $('#pinErr').textContent = /PIN/i.test(ex.message) ? 'Código incorrecto' : 'No se pudo conectar';
+  }finally{ $('#pinBtn').disabled = false; }
+}
+$('#reload').onclick = async () => {
+  try{ ROWS = await rpc('rsvp_abierto_panel', { p_event:CFG.event, p_pin:PIN }); render(); toast('Lista actualizada'); }
+  catch(e){ toast('No se pudo actualizar'); }
+};
+
+function loadScript(src){
+  return new Promise((ok, bad) => {
+    if(document.querySelector(`script[src="${src}"]`)) return ok();
+    const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = bad; document.head.appendChild(s);
+  });
+}
+const fmtFecha = iso => new Date(iso).toLocaleString('es-DO', { day:'2-digit', month:'short', hour:'numeric', minute:'2-digit' });
+const fmtDia = iso => { const d=new Date(iso); return d.toLocaleDateString('es-DO',{day:'2-digit',month:'short'}) };
+const waLink = t => { let d = String(t||'').replace(/\D/g,''); if(d.length===10) d='1'+d; return d.length>=10 ? `https://wa.me/${d}` : null; };
+
+function render(){
+  const si = ROWS.filter(r => r.asiste), no = ROWS.filter(r => !r.asiste);
+  const pers = si.reduce((a,r) => a + (r.personas||0), 0);
+  $('#kPers').textContent = pers; $('#kSi').textContent = si.length; $('#kNo').textContent = no.length; $('#kTot').textContent = ROWS.length;
+  $('#kLast').textContent = ROWS[0] ? 'última: ' + fmtFecha(ROWS[0].actualizado || ROWS[0].creado) : '—';
+  renderTable(); renderCharts(si, no);
+}
+function renderTable(){
+  const q = $('#q').value.trim().toLowerCase();
+  const list = ROWS.filter(r => (filtro==='all' || (filtro==='si') === r.asiste) && (!q || (r.nombre||'').toLowerCase().includes(q) || (r.telefono||'').includes(q)));
+  $('#tbody').innerHTML = list.length ? list.map((r,i) => {
+    const w = waLink(r.telefono);
+    return `<tr>
+      <td>${i+1}</td>
+      <td><b>${esc(r.nombre)}</b></td>
+      <td><span class="tag ${r.asiste?'si':'no'}">${r.asiste?'Sí':'No'}</span></td>
+      <td>${r.asiste ? r.personas : '—'}</td>
+      <td>${r.telefono ? (w ? `<a class="wa" href="${w}" target="_blank" rel="noopener">${esc(r.telefono)}</a>` : esc(r.telefono)) : '—'}</td>
+      <td class="msg">${esc(r.mensaje || '')}</td>
+      <td>${fmtFecha(r.actualizado || r.creado)}</td>
+      <td><button class="del" title="Eliminar" data-id="${r.id}">✕</button></td>
+    </tr>`; }).join('') : `<tr><td colspan="8" class="empty">Aún no hay respuestas${q||filtro!=='all'?' con ese filtro':''}.</td></tr>`;
+}
+$('#q').addEventListener('input', renderTable);
+$('#seg').addEventListener('click', e => {
+  const b = e.target.closest('button'); if(!b) return;
+  filtro = b.dataset.f; document.querySelectorAll('#seg button').forEach(x => x.classList.toggle('on', x===b)); renderTable();
+});
+$('#tbody').addEventListener('click', async e => {
+  const b = e.target.closest('.del'); if(!b) return;
+  const r = ROWS.find(x => String(x.id) === b.dataset.id);
+  if(!r || !confirm(`¿Eliminar la respuesta de ${r.nombre}? (útil para duplicados)`)) return;
+  try{ await rpc('rsvp_abierto_eliminar', { p_event:CFG.event, p_pin:PIN, p_id:r.id }); ROWS = ROWS.filter(x => x !== r); render(); toast('Respuesta eliminada'); }
+  catch(ex){ toast('No se pudo eliminar'); }
+});
+
+function renderCharts(si, no){
+  if(!window.Chart) return;
+  Chart.defaults.font.family = "'Cormorant Garamond', Georgia, serif"; Chart.defaults.font.size = 14; Chart.defaults.color = '#7a6f5c';
+  Object.values(charts).forEach(c => c.destroy());
+  charts.pie = new Chart($('#cPie'), {
+    type:'doughnut',
+    data:{ labels:['Asistirán','No asistirán'], datasets:[{ data:[si.length, no.length], backgroundColor:['#5f7d6e','#d8b45e'], borderColor:'#fbf7ee', borderWidth:3 }] },
+    options:{ maintainAspectRatio:false, cutout:'62%', plugins:{ legend:{ position:'bottom' } } }
+  });
+  const dias = {}; [...ROWS].sort((a,b) => new Date(a.creado) - new Date(b.creado)).forEach(r => {
+    const k = fmtDia(r.creado); dias[k] = dias[k] || {si:0,no:0}; dias[k][r.asiste?'si':'no']++;
+  });
+  const labels = Object.keys(dias);
+  charts.days = new Chart($('#cDays'), {
+    type:'bar',
+    data:{ labels, datasets:[
+      { label:'Sí', data:labels.map(k=>dias[k].si), backgroundColor:'#5f7d6e', borderRadius:4 },
+      { label:'No', data:labels.map(k=>dias[k].no), backgroundColor:'#d8b45e', borderRadius:4 } ] },
+    options:{ maintainAspectRatio:false, scales:{ x:{ stacked:true, grid:{display:false} }, y:{ stacked:true, beginAtZero:true, ticks:{ precision:0 } } }, plugins:{ legend:{ position:'bottom' } } }
+  });
+  const max = Math.max(CFG.maxPersonas, ...si.map(r=>r.personas||1));
+  const sizes = Array.from({length:max}, (_,i) => si.filter(r => r.personas === i+1).length);
+  charts.size = new Chart($('#cSize'), {
+    type:'bar',
+    data:{ labels:sizes.map((_,i)=> (i+1) + ' pers.'), datasets:[{ label:'Grupos', data:sizes, backgroundColor:'#8ba696', borderRadius:4 }] },
+    options:{ maintainAspectRatio:false, plugins:{ legend:{ display:false } }, scales:{ x:{ grid:{display:false} }, y:{ beginAtZero:true, ticks:{ precision:0 } } } }
+  });
+}
+
+/* ================= Descargas ================= */
+function filas(){
+  return [...ROWS].sort((a,b)=> (b.asiste - a.asiste) || a.nombre.localeCompare(b.nombre,'es')).map((r,i) => ({
+    '#': i+1, 'Nombre': r.nombre, 'Asistirá': r.asiste ? 'Sí' : 'No', 'Personas': r.asiste ? r.personas : 0,
+    'Teléfono': r.telefono || '', 'Mensaje': r.mensaje || '', 'Fecha de respuesta': new Date(r.actualizado || r.creado).toLocaleString('es-DO')
+  }));
+}
+$('#dlXlsx').onclick = async () => {
+  try{
+    await loadScript('https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js');
+    const data = filas(), wb = XLSX.utils.book_new();
+    const ws = XLSX.utils.json_to_sheet(data);
+    ws['!cols'] = [{wch:4},{wch:30},{wch:9},{wch:9},{wch:15},{wch:45},{wch:22}];
+    XLSX.utils.book_append_sheet(wb, ws, 'Invitados');
+    const si = ROWS.filter(r=>r.asiste);
+    const res = XLSX.utils.aoa_to_sheet([
+      ['Boda Rafa & Gilianny — 21 de diciembre 2026, 6:00 PM'], [],
+      ['Personas que asistirán', si.reduce((a,r)=>a+r.personas,0)],
+      ['Respuestas "Sí"', si.length], ['Respuestas "No"', ROWS.length - si.length], ['Total de respuestas', ROWS.length],
+      ['Generado', new Date().toLocaleString('es-DO')]
+    ]);
+    res['!cols'] = [{wch:28},{wch:22}];
+    XLSX.utils.book_append_sheet(wb, res, 'Resumen');
+    XLSX.writeFile(wb, CFG.archivo + '.xlsx');
+  }catch(e){ toast('No se pudo generar el Excel, prueba CSV'); }
+};
+$('#dlCsv').onclick = () => {
+  const data = filas(); if(!data.length) return toast('Aún no hay respuestas');
+  const head = Object.keys(data[0]);
+  const csv = [head, ...data.map(o => head.map(h => o[h]))].map(r => r.map(v => `"${String(v).replace(/"/g,'""')}"`).join(',')).join('\r\n');
+  const blob = new Blob(['\ufeff' + csv], { type:'text/csv;charset=utf-8' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = CFG.archivo + '.csv'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+};
+</script>
+</body>
+</html>
